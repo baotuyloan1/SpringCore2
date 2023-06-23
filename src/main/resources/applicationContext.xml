@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="helloWorld" class="com.baonguyen.HelloWorld">
+        <property name="message" value="Hello World xml config"/>
+    </bean>
+
+    <bean id="profile" class="com.baonguyen.qualifierAnnotation.EmailService"/>
+
+    <bean id="student1" class="com.baonguyen.qualifierAnnotation.Student">
+        <property name="name" value="Zara"/>
+        <property name="age" value="11"/>
+    </bean>
+    <bean id="student2" class="com.baonguyen.qualifierAnnotation.Student">
+        <property name="name" value="Bao Ne"/>
+        <property name="age" value="12"/>
+    </bean>
+
+</beans>
